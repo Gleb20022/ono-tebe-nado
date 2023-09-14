@@ -1,1 +1,349 @@
-/* место для вашего кода */
+.content-section {
+    width: 1440px;
+    margin: auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    min-height: 109px;
+    padding: 90px 50px;
+}
+
+.header__links-list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 32px;
+    list-style: circle;
+}
+
+.header__links-list-item {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    text-underline-position: under;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__logo {
+    display: block;
+    flex-shrink: 0;
+    width: 145px;
+}
+
+.header__logo-image {
+    width: 100%;
+}
+
+.address {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: end;
+    gap: 1px;
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24.3px;
+    text-underline-position: under;
+}
+
+.address a {
+    width: calc((100% - 120px) / 2);
+}
+
+.cover {
+    position: relative;
+    max-height: 757px;
+    padding: 165px 50px 237px 50px;
+    background-image: url(../images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.60);
+}
+
+.cover__title {
+    position: relative;
+    width: 100%;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 100px;
+    letter-spacing: 60px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 115%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.aligned-text_center {
+    line-height: 130%;
+    text-align: center;
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.cover__description {
+    position: relative;
+    inset: 127px 1px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 78px;
+}
+
+.cover__description-text {
+    color: #FFF;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 28px;
+    text-align: center; 
+    text-transform: uppercase;
+    word-spacing: 18px;
+}
+
+.bet-button {
+    flex-shrink: 0;
+    width: 257px;
+    height: 52px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.lots {
+    padding: 180px 50px;
+}
+
+.lots-heading {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 27px;
+    padding-left: 40px;
+}
+
+.lots__title {
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.lots__card-list {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+.lots__card-list-item {
+    flex-grow: 1;
+    max-width: 430px;
+    min-height: 450px;
+}
+
+.card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 50px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.card_title {
+    z-index: 1;
+    max-width: 350px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 120%; 
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.card_text { 
+    z-index: 1;
+    max-width: 350px;
+    color: #FFF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.lots__look-more-link {
+    display: block;
+    padding-top: 30px;
+    padding-left: 40px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: center;
+    align-items: end;
+    gap: 12px;
+    min-height: 487px;
+    padding: 0 50px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    width: 240px;
+    height: 240px;
+    margin-right: 3px 13px 0 0;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.about__logo-image {
+    flex-shrink: 0;
+    width: 148px;
+    height: 114px;
+}
+
+.about__column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about__title {
+    padding-bottom: 75px;
+    color: #000;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about__text {
+    display: flex;
+    flex-flow: column;
+    gap: 25px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+    padding: 180px 50px 90px 50px;
+}
+
+.footer__footer {
+    align-items: start;
+}
+
+.footer__menu-list {
+  text-align: center;
+  list-style: none;
+}
+
+.footer_menu-link {
+    color: #000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: normal;
+    text-decoration: underline;
+  }
+  
+  .footer_menu-link_active {
+    text-decoration: none;
+  }
+  
+  .footer__social-link {
+    display: block;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .footer__social-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-self: end;
+    align-items: center;
+    gap: 20px 48px;
+    max-width: 240px;
+    list-style: none;
+  }
+
