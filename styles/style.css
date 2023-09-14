@@ -130,7 +130,7 @@
     font-size: 22px;
     font-style: normal;
     line-height: 28px;
-    text-align: center; 
+    text-align: center;
     text-transform: uppercase;
     word-spacing: 18px;
 }
@@ -221,12 +221,12 @@
     color: #FFF;
     font-weight: 700;
     font-size: 22px;
-    line-height: 120%; 
+    line-height: 120%;
     text-decoration-line: underline;
     text-transform: uppercase;
 }
 
-.card_text { 
+.card_text {
     z-index: 1;
     max-width: 350px;
     color: #FFF;
