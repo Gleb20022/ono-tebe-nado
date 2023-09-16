@@ -1,5 +1,5 @@
 .content-section {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
 }
 
@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     align-items: center;
-    min-height: 109px;
     padding: 90px 50px;
 }
 
@@ -48,7 +47,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: end;
-    gap: 1px;
+    padding: 3px;
     color: #000;
     font-weight: 400;
     font-size: 18px;
@@ -58,13 +57,13 @@
 }
 
 .address a {
-    width: calc((100% - 120px) / 2);
+    max-width: fit-content;
+    padding-right: 107px;
 }
 
 .cover {
     position: relative;
-    max-height: 757px;
-    padding: 165px 50px 237px 50px;
+    padding: 165px 50px 176px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -152,17 +151,14 @@
 }
 
 .lots {
-    padding: 180px 50px;
+    padding: 179px 50px;
 }
 
-.lots-heading {
+.lots__title {
     display: flex;
     justify-content: start;
     padding-bottom: 27px;
     padding-left: 40px;
-}
-
-.lots__title {
     color: #000;
     font-weight: 700;
     font-size: 40px;
@@ -237,8 +233,9 @@
 
 .lots__look-more-link {
     display: block;
-    padding-top: 30px;
-    padding-left: 40px;
+    max-width: fit-content;
+    margin-top: 30px;
+    margin-left: 40px;
     color: #000;
     font-weight: 400;
     font-size: 20px;
@@ -253,9 +250,8 @@
     grid-template-columns: 1fr 2fr;
     justify-items: center;
     align-items: end;
-    gap: 12px;
-    min-height: 487px;
-    padding: 0 50px;
+    gap: 20px;
+    padding: 0 50px 0 43px;
 }
 
 .about__logo {
@@ -265,7 +261,7 @@
     align-self: start;
     width: 240px;
     height: 240px;
-    margin-right: 3px 13px 0 0;
+    margin: 3px 0 0 0;
     border-radius: 50%;
     background-color: #000;
 }
@@ -280,6 +276,7 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    padding-top: 104px;
 }
 
 .about__title {
@@ -343,7 +340,6 @@
     justify-self: end;
     align-items: center;
     gap: 20px 48px;
-    max-width: 240px;
     list-style: none;
   }
 
